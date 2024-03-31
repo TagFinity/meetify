@@ -16,7 +16,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
       <ClerkProvider
       appearance={{
         layout: {
@@ -31,8 +30,9 @@ export default function RootLayout({
           colorInputText: '#fff'
         }
       }}>
+    <html lang="en">
       <body className={`${inter.className} bg-dark-2`}>{children}</body>
-      </ClerkProvider>
     </html>
+      </ClerkProvider>
   );
 }
